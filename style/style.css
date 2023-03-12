@@ -44,7 +44,7 @@ li {
 
 .cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 	grid-gap: 1.5rem;
 }
 
@@ -83,7 +83,7 @@ li {
 	letter-spacing: 0.5rem;
 	color: #1d1d1d;
 	user-select: none;
-	transform: translateX(7rem);
+	transform: translateX(25rem);
 	transition: transform 2.5s;
 }
 
@@ -110,7 +110,7 @@ li {
 }
 
 .card:hover .card-title-large {
-	transform: translateX(-115%);
+	transform: translateX(-80%);
 	color: #fff;
 }
 
