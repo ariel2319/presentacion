@@ -184,22 +184,28 @@ a img:hover {
 }
 
 @media screen and (max-width: 800px) {
+	.card-title{
+		font-size: 7rem;
+	}
 	.ariel {
+		width: 90vw;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 
 	.card:hover .card-title {
-		transform: translateX(8%);
+		transform: translateX(1%);
 		color: #fff;
 	}
 
 	.cards {
+		width: 90vw;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.card-title-large {
+		font-size: 5rem;
 		transform: translateX(57rem);
 		transition: transform 2.5s;
 	}
@@ -208,4 +214,8 @@ a img:hover {
 		transform: translateX(0%);
 		color: #fff;
 	}
+
+.social{
+	justify-content: space-between;
+}
 }
