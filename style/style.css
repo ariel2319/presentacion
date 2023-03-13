@@ -74,8 +74,9 @@ li {
 }
 
 .card:hover {
-	box-shadow: 2px 2px 4px rgba(241, 238, 59, 0.479);
-	transform: scale(1.01);
+	filter: drop-shadow(2px 2px 6px rgb(184, 172, 172));
+	/* box-shadow: 2px 2px 4px rgba(241, 238, 59, 0.479); */
+	transform: scale(1.02);
 }
 
 .card-title-large {
@@ -154,7 +155,7 @@ a img {
 	background-image: url(../icons/facebook.webp);
 }
 
-a img:hover {
+a div:hover {
 	transform: scale(1.05);
 	filter: drop-shadow(0px 0px 4px rgb(184, 172, 172));
 }
@@ -185,7 +186,14 @@ a img:hover {
 	background-repeat: no-repeat;
 	background-size: contain;
 }
-
+.icon-link {
+	width: 4rem;
+	height: 4rem;
+	background-image: url(../icons/linkedin.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 @media screen and (max-width: 800px) {
 	.card-title{
 		font-size: 7rem;
