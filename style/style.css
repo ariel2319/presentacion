@@ -43,6 +43,7 @@ li {
 }
 
 .cards {
+	min-height: 60rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 	grid-gap: 1.5rem;
@@ -74,7 +75,7 @@ li {
 }
 
 .card:hover {
-	filter: drop-shadow(2px 2px 6px rgb(184, 172, 172));
+	filter: drop-shadow(2px 2px 4px rgb(184, 172, 172));
 	/* box-shadow: 2px 2px 4px rgba(241, 238, 59, 0.479); */
 	transform: scale(1.02);
 }
@@ -111,7 +112,7 @@ li {
 }
 
 .card:hover .card-title-large {
-	transform: translateX(-80%);
+	transform: translateX(0%);
 	color: #fff;
 }
 
@@ -127,6 +128,7 @@ li {
 .card.info:hover {
 	background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
 }
+
 .card.here:hover {
 	background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
 }
@@ -137,6 +139,10 @@ li {
 
 .card.study:hover {
 	background-color: rgb(66, 103, 178);
+}
+
+.card.clon:hover {
+	background-image: linear-gradient(to right, rgb(66, 133, 244) 0%, rgb(52, 168, 83) 19%, rgb(251, 188, 5) 60%, rgb(234, 67, 53) 100%);
 }
 
 .social {
@@ -186,6 +192,7 @@ a div:hover {
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+
 .icon-link {
 	width: 4rem;
 	height: 4rem;
@@ -194,10 +201,12 @@ a div:hover {
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+
 @media screen and (max-width: 800px) {
-	.card-title{
+	.card-title {
 		font-size: 7rem;
 	}
+
 	.ariel {
 		width: 90vw;
 		flex-wrap: wrap;
@@ -226,7 +235,7 @@ a div:hover {
 		color: #fff;
 	}
 
-.social{
-	justify-content: space-between;
-}
+	.social {
+		justify-content: space-between;
+	}
 }
