@@ -67,7 +67,7 @@ li {
   text-decoration: none;
 }
 
-.navbar a:hover {
+.pe:hover {
   text-decoration: underline;
 }
 
@@ -227,13 +227,15 @@ footer {
 
 /************** Foot **************/
 .foot {
+  width: 99vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 0 20px;
   background-color: var(--color-gray-light);
 }
+
 
 .foot div a {
   margin: 0;
@@ -243,9 +245,11 @@ footer {
 }
 .footL {
   padding: 15px 20px ;
+  border: 1px solid green;
 }
 .footR {
   padding: 15px 20px ;
+  border: 1px solid green;
 }
 .foot a:hover,
 .region a:hover {
@@ -254,4 +258,16 @@ footer {
 
 a:-webkit-any-link {
   color: #70757a;
+}
+
+@media screen and (max-width: 900px) {
+  .foot{
+    justify-content: center;
+  }
+  .footL{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
